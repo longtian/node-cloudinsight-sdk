@@ -17,6 +17,10 @@ SDK for Cloud Insight
 ONEAPM_USERNAME=<用户名> ONEAPM_PASSWORD=<密码> node example/server.js
 ```
 
+## 变更记录
+
+[CHANGELOG.md](./CHANGELOG.md)
+
 ## 开源许可证
 
 MIT

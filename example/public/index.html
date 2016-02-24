@@ -4,19 +4,106 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        button, button:focus {
-            border: 1px solid;
+        h6, pre {
+            padding: 0;
+            margin: 0;
+        }
+
+        button {
+            background: #cccccc;
+            border: 1px solid #000;
+            cursor: pointer;
             outline: none;
+        }
+
+        button:disabled {
+            cursor: not-allowed;
         }
 
         .ok {
             color: white;
             background: green;
         }
+
+        .error {
+            color: white;
+            background: red;
+        }
+
+        .na {
+            color: white;
+            background: orange;
+        }
+
+        pre {
+            min-height: 100px;
+        }
+
+        nav {
+            width: 200px;
+            position: absolute;
+            left: 0;
+        }
+
+        .main {
+            margin-left: 210px;
+        }
     </style>
 </head>
 <body>
-<button>API.dashboards('user')</button>
+
+<nav>
+    <h6>平台</h6>
+    <button>API.hosts()</button>
+    <button>API.hosts('fan')</button>
+
+    <h6>标签</h6>
+    <button>API.tags()</button>
+
+    <h6>事件</h6>
+    <button>API.events()</button>
+
+    <h6>指标</h6>
+    <button>API.metrics()</button>
+
+    <h6>Webhook</h6>
+    <button>API.webhooks()</button>
+
+    <h6>报警策略</h6>
+    <button>API.alarm_strategies()</button>
+    <button>API.alarm_strategies('1,2')</button>
+    <button>API.alarm_strategie(178)</button>
+    <button>API.alarm_strategie_status(178)</button>
+    <button>API.alarm_strategie_related(178)</button>
+    <button>API.alarm_strategies_enable([177,178])</button>
+    <button>API.alarm_strategies_disable(178)</button>
+
+    <h6>邮箱</h6>
+    <button>API.emails()</button>
+
+    <h6>仪表盘</h6>
+    <button>API.dashboards('user')</button>
+    <button>API.dashboards('system')</button>
+    <button>API.dashboards('custom')</button>
+    <button>API.dashboard(1993)</button>
+    <button>API.dashboard_favourite_update(1993,true)</button>
+    <button>API.dashboard_favourite_update(1993,false)</button>
+    <button>API.dashboard_charts(1993)</button>
+    <button>API.dashboard_params(1993)</button>
+    <button>API.dashboard_create('testing')</button>
+    <button disabled>API.dashboard_remove(1993)</button>
+    <button>API.dashboard_clone(1993,'new Name')</button>
+    <button>API.dashboard_update(1993,{dashboardName:Date.now()})</button>
+    <button>API.dashboard_params_update(1993,[{name:'a',tag_name:'wow',tag_default_value:'wow'}])</button>
+
+    <h6>未实现的方法</h6>
+    <button>API.eval()</button>
+</nav>
+<div class="main">
+    返回结果 <span id="count"></span> :
+    <pre id="pre"></pre>
+</div>
+
 </body>
 <script src="bundle.js"></script>
 </html>
