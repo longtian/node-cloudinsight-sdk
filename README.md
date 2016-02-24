@@ -1,2 +1,16 @@
-# node-cloudinsight-sdk
-SDK for  Cloud Insight
+# cloudinsight
+SDK for Cloud Insight
+
+> 正在开发中
+
+[Cloud Insight](http://www.oneapm.com/ci/feature.html) 是 OneAPM 旗下的监控工具。
+
+## 开发和测试
+
+```
+ONEAPM_USERNAME=<用户名> ONEAPM_PASSWORD=<密码> node example/server.js
+```
+
+## 开源许可证
+
+MIT
