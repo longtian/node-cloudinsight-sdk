@@ -5,6 +5,12 @@ SDK for Cloud Insight
 
 [Cloud Insight](http://www.oneapm.com/ci/feature.html) 是 OneAPM 旗下的监控工具。
 
+## 浏览器兼容性
+
+依赖于 Fetch API
+
+![caniuse](./docs/caniuse.png)
+
 ## 开发和测试
 
 ```
