@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "babel lib --no-comments --minified --copy-files --source-maps=inline --presets es2015 --out-dir=dist",
     "help": "babel -h",
-    "release-patch": "npm run-scrip compile && npm version patch && npm publish"
+    "release-patch": "npm run-scrip compile && npm version patch && npm publish && curl -H 'Content-Length:0' -X PUT https://npm.taobao.org/sync/cloudinsight"
   },
   "repository": {
     "type": "git",
