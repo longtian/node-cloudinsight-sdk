@@ -1,5 +1,5 @@
 {
-  "name": "cloudinsight",
+  "name": "cloudinsight-sdk",
   "version": "0.0.3",
   "description": "SDK for Cloud Insight",
   "main": "dist/index.js",
@@ -9,7 +9,7 @@
     "test": "mocha tests/**/*.test.js --compilers js:babel-core/register",
     "compile": "babel lib --no-comments --minified --copy-files --source-maps=inline --presets es2015 --out-dir=dist",
     "help": "babel -h",
-    "release-patch": "npm run-scrip compile && npm version patch && npm publish && curl -H 'Content-Length:0' -X PUT https://npm.taobao.org/sync/cloudinsight"
+    "release-patch": "npm run-scrip compile && npm version patch && npm publish && curl -H 'Content-Length:0' -X PUT https://npm.taobao.org/sync/cloudinsight-sdk"
   },
   "repository": {
     "type": "git",
