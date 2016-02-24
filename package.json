@@ -1,0 +1,29 @@
+{
+  "name": "cloudinsight",
+  "version": "0.0.0",
+  "description": "SDK for Cloud Insight",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "babel lib --no-comments --minified --copy-files --source-maps=inline --presets es2015 --out-dir=dist",
+    "help": "babel -h"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wyvernnot/node-cloudinsight-sdk.git"
+  },
+  "author": "wyvernnot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wyvernnot/node-cloudinsight-sdk/issues"
+  },
+  "homepage": "https://github.com/wyvernnot/node-cloudinsight-sdk#readme",
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-loader": "^6.2.3",
+    "babel-preset-es2015": "^6.5.0",
+    "express": "^4.13.4",
+    "oneapm-sdk": "0.0.5",
+    "webpack": "^1.12.13",
+    "webpack-dev-middleware": "^1.5.1"
+  }
+}
