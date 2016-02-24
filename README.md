@@ -12,12 +12,6 @@
 npm install cloudinsight-sdk
 ```
 
-## 浏览器兼容性
-
-依赖于 Fetch API
-
-![caniuse](./docs/caniuse.png)
-
 ## 开发和测试
 
 ```
