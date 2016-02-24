@@ -12,8 +12,9 @@ module.exports = {
   },
   module: {
     loaders: [{
-      test: /\.es6$/,
-      loader: 'babel'
+      test: /\.(js|es6)/,
+      loader: 'babel',
+      exclude: path.join(__dirname, 'node_modules')
     }]
   }
 }

@@ -1,7 +1,7 @@
 /**
  * Created by yan on 16-2-22.
  */
-import * as API from '../../lib/index.es6';
+import * as API from '../../lib/index';
 window.API = API;
 
 var buttons = document.querySelectorAll('button');

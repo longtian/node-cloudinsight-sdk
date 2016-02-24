@@ -1,12 +1,10 @@
 # cloudinsight-sdk
-[![](https://img.shields.io/travis/wyvernnot/node-cloudinsight-sdk.svg)](https://travis-ci.org/wyvernnot/node-cloudinsight-sdk)
 [![](https://img.shields.io/npm/v/cloudinsight-sdk.svg)](https://www.npmjs.com/package/cloudinsight-sdk)
+[![](https://img.shields.io/travis/wyvernnot/node-cloudinsight-sdk.svg)](https://travis-ci.org/wyvernnot/node-cloudinsight-sdk)
 [![](https://img.shields.io/coveralls/wyvernnot/node-cloudinsight-sdk.svg)](https://coveralls.io/github/wyvernnot/node-cloudinsight-sdk)
 [![](https://img.shields.io/npm/l/cloudinsight-sdk.svg)](https://github.com/wyvernnot/node-cloudinsight-sdk/blob/master/LICENSE)
 
-SDK for Cloud Insight
-
-[Cloud Insight](http://www.oneapm.com/ci/feature.html) 是 OneAPM 旗下的监控工具。
+[Cloud Insight](http://www.oneapm.com/ci/feature.html) 是 OneAPM 公司的一款监控工具。
 
 ## 安装
 
