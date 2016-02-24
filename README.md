@@ -2,7 +2,7 @@
 [![](https://img.shields.io/travis/wyvernnot/node-cloudinsight-sdk.svg)](https://travis-ci.org/wyvernnot/node-cloudinsight-sdk)
 [![](https://img.shields.io/npm/v/cloudinsight.svg)](https://www.npmjs.com/package/cloudinsight)
 [![](https://img.shields.io/coveralls/wyvernnot/node-cloudinsight-sdk.svg)](https://coveralls.io/github/wyvernnot/node-cloudinsight-sdk)
-[![](https://img.shields.io/npm/l/node-cloudinsight-sdk.svg)](https://github.com/wyvernnot/node-cloudinsight-sdk/blob/master/LICENSE)
+[![](https://img.shields.io/npm/l/cloudinsight.svg)](https://github.com/wyvernnot/node-cloudinsight-sdk/blob/master/LICENSE)
 
 SDK for Cloud Insight
 
