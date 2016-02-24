@@ -4,9 +4,9 @@
   "description": "SDK for Cloud Insight",
   "main": "dist/index.js",
   "scripts": {
-    "ci": "babel-node node_modules/.bin/isparta cover _mocha -- tests/**/*.test.js --compilers js:babel-core/register --report lcovonly -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
-    "cov": "babel-node node_modules/.bin/isparta cover _mocha -- tests/**/*.test.js --compilers js:babel-core/register",
-    "test": "mocha tests/**/*.test.js --compilers js:babel-core/register",
+    "ci": "BASE_URL=https://cloud.oneapm.com babel-node node_modules/.bin/isparta cover _mocha -- tests/**/*.test.js --compilers js:babel-core/register --report lcovonly -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "cov": "BASE_URL=https://cloud.oneapm.com babel-node node_modules/.bin/isparta cover _mocha -- tests/**/*.test.js --compilers js:babel-core/register",
+    "test": "BASE_URL=https://cloud.oneapm.com mocha tests/**/*.test.js --compilers js:babel-core/register",
     "compile": "babel lib --no-comments --minified --copy-files --source-maps=inline --presets es2015 --out-dir=dist",
     "help": "babel -h",
     "release-patch": "npm run-scrip compile && npm version patch && npm publish && curl -H 'Content-Length:0' -X PUT https://npm.taobao.org/sync/cloudinsight-sdk"
@@ -31,8 +31,12 @@
     "istanbul": "^0.4.2",
     "mocha": "^2.4.5",
     "mocha-lcov-reporter": "^1.2.0",
+    "nock": "^7.2.2",
     "oneapm-sdk": "0.0.5",
     "webpack": "^1.12.13",
     "webpack-dev-middleware": "^1.5.1"
+  },
+  "optionalDependencies": {
+    "isomorphic-fetch": "^2.2.1"
   }
 }
