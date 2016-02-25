@@ -183,6 +183,29 @@ describe('toJSON', ()=> {
       ], responseUtil.extractApps(input).apps);
     })
 
+    it('should not have php', () => {
+      let input = {
+        apps: ["php_fpm"],
+        agent_checks: {
+          check_result: [
+            {
+              service: "php_fpm",
+              status: "OK"
+            }]
+        }
+      }
+      deepEqual([
+        {
+          name: 'system',
+          status: 'UNKNOWN'
+        },
+        {
+          name: 'php_fpm',
+          status: 'OK'
+        }
+      ], responseUtil.extractApps(input).apps);
+    })
+
 
     it('should overide existing status', () => {
       let input = {
