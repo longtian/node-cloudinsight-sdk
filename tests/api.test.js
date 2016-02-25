@@ -146,12 +146,12 @@ describe('API', ()=> {
       dashboardName: 'xxx'
     })
   })
-  it('events', ()=> {
+  it('alarm_events', ()=> {
     nock(process.env.BASE_URL).get('/alarm/eventStream/list.json?windowTime=9587').reply(200, {
       code: 0,
       result: []
     });
-    return API.events(9587)
+    return API.alarm_events(9587)
   })
 
   it('alarm_strategies', ()=> {
