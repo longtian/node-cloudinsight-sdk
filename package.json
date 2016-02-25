@@ -1,10 +1,10 @@
 {
   "name": "cloudinsight-sdk",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "SDK for Cloud Insight",
   "main": "dist/index.js",
   "scripts": {
-    "clean":"rimraf dist && rimraf coverage",
+    "clean": "rimraf dist && rimraf coverage",
     "ci": "BASE_URL=https://cloud.oneapm.com babel-node node_modules/.bin/isparta cover _mocha -- tests/**/*.test.js --compilers js:babel-core/register --report lcovonly -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "cov": "BASE_URL=https://cloud.oneapm.com babel-node node_modules/.bin/isparta cover _mocha -- tests/**/*.test.js --compilers js:babel-core/register",
     "test": "BASE_URL=https://cloud.oneapm.com mocha tests/**/*.test.js --compilers js:babel-core/register",
